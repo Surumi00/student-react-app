@@ -1,8 +1,10 @@
 import React from 'react'
+import NavigationBar from './NavigationBar'
 
 const AddStudent = () => {
   return (
     <div>
+        <NavigationBar/>
         <div className="container">
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -10,7 +12,7 @@ const AddStudent = () => {
                    <div className="row g-3">
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                         <label htmlFor="" className="form-label">Amission Number</label>
-                        <input type="text" className="form-control" />
+                        <input type="number" className="form-control" />
                     </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                         <label htmlFor="" className="form-label">full name :</label>
@@ -18,15 +20,15 @@ const AddStudent = () => {
                     </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                         <label htmlFor="" className="form-label">Date of Birth</label>
-                        <input type="text" className="form-control" />
+                        <input type="date" className="form-control" />
                     </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                         <label htmlFor="" className="form-label">Gender</label>
-                        <input type="tel" className="form-control" />
+                        <input type="text" className="form-control" />
                     </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                         <label htmlFor="" className="form-label">class / grade :</label>
-                        <select name="" id="" className="form-control"></select>
+                        <select name="text" id="" className="form-control"></select>
                     </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                         <label htmlFor="" className="form-label">section :</label>

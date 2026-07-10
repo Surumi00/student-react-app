@@ -3,13 +3,25 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import{BrowserRouter,Routes,Route} from 'react-router-dom'
+import AddStudent from './components/AddStudent'
+import SearchStudent from './components/SearchStudent'
+import DeletStudent from './components/DeletStudent'
+
 
 function App() {
  
 
   return (
     <>
-      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<AddStudent/>} />
+          <Route path="/delete" element={<DeletStudent />} />
+          <Route path="/search" element={<SearchStudent />} />
+         
+        </Routes>
+</BrowserRouter>  
     </>
   )
 }
