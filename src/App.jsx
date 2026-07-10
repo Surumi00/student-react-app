@@ -7,6 +7,7 @@ import{BrowserRouter,Routes,Route} from 'react-router-dom'
 import AddStudent from './components/AddStudent'
 import SearchStudent from './components/SearchStudent'
 import DeletStudent from './components/DeletStudent'
+import Viewallstudents from './components/Viewallstudents'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/" element={<AddStudent/>} />
           <Route path="/delete" element={<DeletStudent />} />
           <Route path="/search" element={<SearchStudent />} />
+          <Route path="/Viewall" element={<Viewallstudents />} />
          
         </Routes>
 </BrowserRouter>  
